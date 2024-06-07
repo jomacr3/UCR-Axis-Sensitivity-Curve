@@ -61,16 +61,12 @@ class AxisToModAxis extends _UCR.Classes.Plugin {
         }
     }
 
-    ; Apply a cubic curve for non-linear sensitivity adjustment and normalize to the full range
+    ; Apply a cubic curve for non-linear sensitivity adjustment and normalize
     ApplyNonLinearSensitivity(value, sensitivity){
         ; Apply a cubic curve
         value := value ** 3 + value * 100
-        ; Normalize the value to keep the full range of motion
-        ;if (value > 50){
+        ; Normalize the value
         value := value / (10000)
-        ;} else {
-        ;    value := value / (-100 ** 2)
-        ;}
         return value * (sensitivity / 100)
     }
 }
