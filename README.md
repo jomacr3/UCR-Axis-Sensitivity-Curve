@@ -1,12 +1,13 @@
-# UCR-Axis-Sensitivity-Curve
+# Introduction
 A custom plugin written for UCR with vJoy. It is meant to increase the sensitivity of an axis as it moves further from its center. It maps its output to a vJoy stick axis.
 The main feature of this plugin is the cubic function that dynamically changes "sensitivity" as the axis moves further from the sensor.
 (Note: this profile was originally made for the Thrustmaster Nascar Pro Force Feedback with no gear shift. For this device set sensitivity to 400% in the UCR GUI)
 
-Usage instructions:
-Add the .ahk file to your UCR files under the directory <UCR install directory>\UCR\Plugins\User
+# Usage Instructions
+Add the .ahk file to your UCR files under the directory \<UCR install directory\>\UCR\Plugins\User 
 Every input device is different and will likely require trial and error with the sensitivity multiplier in the UCR GUI. 
 
+### Editing the .ahk
 If you want to change the cubic function itself, the easiest way to change this function is to graph the function in Desmos or similar graphing software to visualize the output. 
 Example using the function uploaded:
 ; Apply a cubic curve
